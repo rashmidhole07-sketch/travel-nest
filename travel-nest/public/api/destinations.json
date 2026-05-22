@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Taj Mahal, Agra",
+    "slug": "taj-mahal",
+    "category": "Landmark",
+    "description": "Iconic Mughal mausoleum and UNESCO World Heritage site in Agra.",
+    "wikiTitle": "Taj Mahal",
+    "image": "/images/destinations/taj-mahal.jpg",
+    "rating": 4.9,
+    "reviews": 7632,
+    "bestTime": "October - March",
+    "avgBudget": "₹7,000-12,000",
+    "language": "Hindi, English",
+    "attractions": [
+      { "id": 1, "name": "Taj Mahal", "rating": 4.9 },
+      { "id": 2, "name": "Agra Fort", "rating": 4.8 },
+      { "id": 3, "name": "Mehtab Bagh", "rating": 4.7 },
+      { "id": 4, "name": "Itimad-ud-Daulah", "rating": 4.6 }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Jaipur, Rajasthan",
+    "slug": "jaipur-rajasthan",
+    "category": "Royal City",
+    "description": "The Pink City of palaces, forts, and vibrant bazaars.",
+    "wikiTitle": "Jaipur",
+    "image": "/images/destinations/jaipur-rajasthan.jpg",
+    "rating": 4.8,
+    "reviews": 5120,
+    "bestTime": "October - March",
+    "avgBudget": "₹8,000-15,000",
+    "language": "Hindi, English",
+    "attractions": [
+      { "id": 1, "name": "Amber Fort", "rating": 4.9 },
+      { "id": 2, "name": "Hawa Mahal", "rating": 4.8 },
+      { "id": 3, "name": "City Palace", "rating": 4.7 },
+      { "id": 4, "name": "Jantar Mantar", "rating": 4.6 }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Goa, India",
+    "slug": "goa-india",
+    "category": "Beach",
+    "description": "Sun-soaked beaches, seafood, and lively nightlife.",
+    "wikiTitle": "Goa",
+    "image": "/images/destinations/goa-india.jpg",
+    "rating": 4.7,
+    "reviews": 5983,
+    "bestTime": "November - February",
+    "avgBudget": "₹6,000-10,000",
+    "language": "Konkani, English",
+    "attractions": [
+      { "id": 1, "name": "Baga Beach", "rating": 4.8 },
+      { "id": 2, "name": "Fort Aguada", "rating": 4.7 },
+      { "id": 3, "name": "Anjuna Market", "rating": 4.6 },
+      { "id": 4, "name": "Dudhsagar Falls", "rating": 4.9 }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Varanasi, Uttar Pradesh",
+    "slug": "varanasi-uttar-pradesh",
+    "category": "Spiritual",
+    "description": "Spiritual ghats and ancient rituals on the banks of the Ganges.",
+    "wikiTitle": "Varanasi",
+    "image": "/images/destinations/varanasi-uttar-pradesh.jpg",
+    "rating": 4.6,
+    "reviews": 4321,
+    "bestTime": "October - March",
+    "avgBudget": "₹5,000-9,000",
+    "language": "Hindi, Sanskrit",
+    "attractions": [
+      { "id": 1, "name": "Dashashwamedh Ghat", "rating": 4.8 },
+      { "id": 2, "name": "Kashi Vishwanath Temple", "rating": 4.9 },
+      { "id": 3, "name": "Sarnath", "rating": 4.7 },
+      { "id": 4, "name": "Ganga Aarti", "rating": 4.9 }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Kerala Backwaters",
+    "slug": "kerala-backwaters",
+    "category": "Nature",
+    "description": "Lush canals, houseboats, and tropical serenity.",
+    "wikiTitle": "Kerala backwaters",
+    "image": "/images/destinations/kerala-backwaters.jpg",
+    "rating": 4.8,
+    "reviews": 3784,
+    "bestTime": "November - February",
+    "avgBudget": "₹9,000-16,000",
+    "language": "Malayalam, English",
+    "attractions": [
+      { "id": 1, "name": "Alleppey Backwaters", "rating": 4.9 },
+      { "id": 2, "name": "Kumarakom Bird Sanctuary", "rating": 4.7 },
+      { "id": 3, "name": "Munnar Tea Gardens", "rating": 4.8 },
+      { "id": 4, "name": "Kollam Canal", "rating": 4.6 }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Leh-Ladakh",
+    "slug": "leh-ladakh",
+    "category": "Adventure",
+    "description": "High-altitude deserts, monasteries, and Himalayan views.",
+    "wikiTitle": "Ladakh",
+    "image": "/images/destinations/leh-ladakh.jpg",
+    "rating": 4.9,
+    "reviews": 2430,
+    "bestTime": "June - September",
+    "avgBudget": "₹10,000-18,000",
+    "language": "Ladakhi, Hindi, English",
+    "attractions": [
+      { "id": 1, "name": "Pangong Lake", "rating": 4.9 },
+      { "id": 2, "name": "Nubra Valley", "rating": 4.8 },
+      { "id": 3, "name": "Thiksey Monastery", "rating": 4.7 },
+      { "id": 4, "name": "Magnetic Hill", "rating": 4.6 }
+    ]
+  }
+]

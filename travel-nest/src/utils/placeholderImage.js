@@ -1,0 +1,4 @@
+export function placeholderImage(label, width = 300, height = 200) {
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}"><defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#4dabf7" /><stop offset="100%" stop-color="#81c784" /></linearGradient></defs><rect width="100%" height="100%" fill="url(#bg)"/><circle cx="${Math.round(width * 0.2)}" cy="${Math.round(height * 0.25)}" r="${Math.round(Math.min(width, height) * 0.12)}" fill="rgba(255,255,255,0.55)"/><rect x="20" y="${height - 68}" width="${width - 40}" height="48" rx="14" fill="rgba(255,255,255,0.88)"/><text x="50%" y="${height - 34}" text-anchor="middle" font-size="18" font-family="Segoe UI, Arial, sans-serif" fill="#212121">${label}</text></svg>`
+  return `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(svg).replace(/'/g, '%27').replace(/\(/g, '%28').replace(/\)/g, '%29')}`
+}

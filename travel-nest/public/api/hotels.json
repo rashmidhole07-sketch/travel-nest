@@ -1,0 +1,28 @@
+[
+  {
+    "id": 1,
+    "name": "The Oberoi, Mumbai",
+    "location": "Mumbai, India",
+    "price": "₹18,000",
+    "rating": 4.8,
+    "image": "/images/hotels/oberai-mumbai.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Taj Palace, Delhi",
+    "location": "New Delhi, India",
+    "price": "₹13,500",
+    "rating": 4.7,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Exterior_view_of_Taj_Mahal_Hotel%2C_New_Delhi.jpg",
+    "imageLocked": true
+  },
+  {
+    "id": 3,
+    "name": "Leela Palace, Udaipur",
+    "location": "Udaipur, India",
+    "price": "₹12,000",
+    "rating": 4.6,
+    "image": "https://cdn.pixabay.com/photo/2019/09/13/18/08/hotel-4474576_1280.jpg",
+    "imageLocked": true
+  }
+]

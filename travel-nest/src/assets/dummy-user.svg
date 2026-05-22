@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 240 240" role="img" aria-labelledby="title">
+  <title id="title">Dummy user profile</title>
+  <rect width="240" height="240" rx="120" fill="#eaf0ff"/>
+  <circle cx="120" cy="94" r="44" fill="#ffffff"/>
+  <path d="M42 220c7.5-45.5 40.3-77 78-77s70.5 31.5 78 77" fill="#ffffff"/>
+  <circle cx="120" cy="120" r="116" fill="none" stroke="#3366ff" stroke-width="8"/>
+  <path d="M74 206c13-22 29-33 46-33s33 11 46 33" fill="none" stroke="#cdd9ff" stroke-width="14" stroke-linecap="round"/>
+</svg>

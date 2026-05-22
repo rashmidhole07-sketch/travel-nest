@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" role="img" aria-labelledby="title desc">
+  <title id="title">Hotel illustration</title>
+  <desc id="desc">Illustration of a hotel building with warm colors</desc>
+  <rect width="400" height="260" rx="24" fill="#dde4f2" />
+  <rect x="26" y="26" width="348" height="188" rx="18" fill="#fff" />
+  <rect x="36" y="46" width="296" height="56" rx="12" fill="#1e74ff" opacity="0.9" />
+  <rect x="54" y="122" width="64" height="80" rx="10" fill="#ffc107" />
+  <rect x="142" y="122" width="64" height="80" rx="10" fill="#ffc107" />
+  <rect x="230" y="122" width="64" height="80" rx="10" fill="#ffc107" />
+  <rect x="318" y="122" width="64" height="80" rx="10" fill="#ffc107" />
+  <rect x="58" y="70" width="40" height="24" rx="6" fill="#fff" />
+  <rect x="116" y="70" width="40" height="24" rx="6" fill="#fff" />
+  <rect x="174" y="70" width="40" height="24" rx="6" fill="#fff" />
+  <rect x="232" y="70" width="40" height="24" rx="6" fill="#fff" />
+  <rect x="290" y="70" width="40" height="24" rx="6" fill="#fff" />
+  <circle cx="90" cy="206" r="14" fill="#ff6f61" />
+  <circle cx="310" cy="206" r="14" fill="#ff6f61" />
+  <path d="M122 216h156" stroke="#adb5bd" stroke-width="8" stroke-linecap="round" />
+  <text x="50%" y="240" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="24" fill="#495057">Hotel Image</text>
+</svg>
