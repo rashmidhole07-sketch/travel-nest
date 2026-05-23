@@ -94,7 +94,7 @@ export default function Topbar({ onToggleSidebar }) {
           />
           {searchError && <div className="invalid-feedback d-block">{searchError}</div>}
         </form>
-        <div className="d-none d-sm-block text-end position-relative">
+        <div className="text-end position-relative">
           <div className="small text-muted">Account</div>
           <button
             type="button"
