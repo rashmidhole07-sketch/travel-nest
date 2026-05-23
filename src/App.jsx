@@ -26,12 +26,15 @@ import {
   SettingsPage,
   NotFoundPage,
 } from './pages/Pages.jsx'
+import { useAuth } from './contexts/AuthContext.jsx'
 
 function App() {
+  const { initialized, isAuthenticated } = useAuth()
+  if (!initialized) return null
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Navigate replace to="/login" />} />
+        <Route path="/" element={<Navigate replace to={isAuthenticated ? '/dashboard' : '/login'} />} />
 
         <Route element={<AuthLayout />}>
           <Route path="login" element={<LoginPage />} />

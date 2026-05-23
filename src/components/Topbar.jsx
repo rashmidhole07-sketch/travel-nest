@@ -1,6 +1,7 @@
 import { useState, useContext, useEffect } from 'react'
 import { useNavigate, useLocation, Link } from 'react-router-dom'
 import SearchContext from '../contexts/SearchContext.jsx'
+import { useAuth } from '../contexts/AuthContext.jsx'
 
 export default function Topbar({ onToggleSidebar }) {
   const navigate = useNavigate()
@@ -9,6 +10,7 @@ export default function Topbar({ onToggleSidebar }) {
   const [searchError, setSearchError] = useState('')
   const [darkMode, setDarkMode] = useState(() => localStorage.getItem('theme') === 'dark')
   const { searchQuery, setSearchQuery } = useContext(SearchContext)
+  const auth = useAuth()
 
   useEffect(() => {
     const handleThemeChange = (event) => {
@@ -20,7 +22,7 @@ export default function Topbar({ onToggleSidebar }) {
   }, [])
 
   const handleLogout = () => {
-    // Clear any stored auth state here when added
+    auth.logout()
     navigate('/login')
   }
 

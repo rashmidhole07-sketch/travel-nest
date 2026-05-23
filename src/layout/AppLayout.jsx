@@ -1,14 +1,19 @@
-import { Outlet } from 'react-router-dom'
+import { Outlet, Navigate } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import Sidebar from '../components/Sidebar.jsx'
 import Topbar from '../components/Topbar.jsx'
 import Footer from '../components/Footer.jsx'
 import SearchContext from '../contexts/SearchContext.jsx'
 import FavoritesContext from '../contexts/FavoritesContext.jsx'
+import { useAuth } from '../contexts/AuthContext.jsx'
 
 const defaultFavorites = []
 
 export default function AppLayout() {
+  const { initialized, isAuthenticated } = useAuth()
+  if (!initialized) return null
+  if (!isAuthenticated) return <Navigate to="/login" replace />
+
   const [showSidebar, setShowSidebar] = useState(true)
   const [searchQuery, setSearchQuery] = useState('')
   const [favorites, setFavorites] = useState(defaultFavorites)

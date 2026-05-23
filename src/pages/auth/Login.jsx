@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useNavigate, Link } from 'react-router-dom'
 import Logo from '../../components/Logo.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import { useAuth } from '../../contexts/AuthContext.jsx'
 
 export default function Login() {
   const [email, setEmail] = useState('')
@@ -12,6 +13,7 @@ export default function Login() {
   const [loading, setLoading] = useState(false)
   const [formError, setFormError] = useState('')
   const navigate = useNavigate()
+  const auth = useAuth()
 
   const demoCredentials = {
     email: 'demo@travelnest.com',
@@ -48,6 +50,7 @@ export default function Login() {
     const canUseChangedPassword = storedPassword && password === storedPassword
 
     if (canUseDemoLogin || canUseChangedPassword) {
+      auth.login({ user: { email: normalizedEmail }, token: null })
       navigate('/dashboard')
       setLoading(false)
       return
@@ -62,7 +65,8 @@ export default function Login() {
       .then(async (res) => {
         const data = await res.json().catch(() => ({}))
         if (!res.ok) throw new Error(data?.message || 'Login failed')
-        // TODO: persist token/session as needed
+        // persist token/session
+        auth.login({ user: { email: normalizedEmail }, token: data?.token || null })
         navigate('/dashboard')
       })
       .catch((err) => {

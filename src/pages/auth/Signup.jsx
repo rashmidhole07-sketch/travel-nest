@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useNavigate, Link } from 'react-router-dom'
 import Logo from '../../components/Logo.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import { useAuth } from '../../contexts/AuthContext.jsx'
 
 export default function Signup() {
   const [formData, setFormData] = useState({
@@ -14,6 +15,7 @@ export default function Signup() {
   const [touched, setTouched] = useState({})
   const [showPassword, setShowPassword] = useState(false)
   const navigate = useNavigate()
+  const auth = useAuth()
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value })
@@ -38,6 +40,7 @@ export default function Signup() {
     setTouched({ name: true, email: true, password: true, confirmPassword: true })
     if (Object.keys(errs).length > 0) return
     // TODO: Add signup logic (call API)
+    auth.login({ user: { email: formData.email }, token: null })
     navigate('/dashboard')
   }
 
